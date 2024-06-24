@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>AU::Regions</title>
+    <!-- import Google Font Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- import Google Font Roboto Condensed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- load index.js -->
+    <script src="index.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+
+</head>
+
+<body>
+<div class="page_title_container">
+    <!-- font awesome globe -->
+    <i class="fas fa-globe"></i>
+    <h1>AU::REGIONS</h1>
+</div>
+<nav>
+    <div>
+        <button><a href="index.html">Home</a></button>
+        <button><a href="index.html?action=reload">Reload</a></button>
+        <input type="text" name="search_text" id="search_text" class="text_input">
+        <button onclick="search()">SEARCH</button>
+        <button onclick="search_reset()">RESET</button>
+    </div>
+    
+</nav>
+
+<div class="left_right">
+    <section>
+        <!-- font awesome icon map  -->
+        <header><i class="fas fa-map-marked-alt"></i>MAP</header>
+        <div id="regions_map">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section>
+        <!-- font awesome icon table  -->
+        <header><i class="fas fa-table"></i>DATA TABLE</header>
+    
+        <article id="table_container">
+            <table>
+            </table>
+        </article>
+    </section>
+
+    <section>
+        <!-- font awesome icon info  -->
+        <header><i class="fas fa-info"></i>INFO + STATISTICS</header>
+        <div id="regions_info">
+            <ul id="statistics">
+                <li><span>Number of Regions:</span>  <span id="num_regions">fetching ....</span></li>
+                <li><span>Number of Polygons:</span> <span id="num_polygons">fetching ....</span></li>
+                <li><span>Number of Points:</span>   <span id="num_points">fetching ....</span></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section>
+        <!-- font awesome icon chart  -->
+        <header><i class="fas fa-chart-bar"></i>CHART</header>
+        <div id="regions_chart">
+            <!-- <canvas id="chart"></canvas> -->
+            <p>to be released in v2.1</p>
+        </div>
+    </section>
+
+
+</div>
+
+
+
+</body>
+
+</html>
+
