@@ -33,7 +33,7 @@
     <div>
         <button><a href="index.html">Home</a></button>
         <button><a href="index.html?action=reload">Reload</a></button>
-        <input type="text" name="search_text" id="search_text" class="text_input">
+        <input type="text" name="search_text" id="search_text" class="text_input" onkeyup="search_from_input(this)">
         <button onclick="search()">SEARCH</button>
         <button onclick="search_reset()">RESET</button>
     </div>
@@ -60,9 +60,9 @@
     </section>
 
     <section>
-        <!-- font awesome icon info  -->
-        <header><i class="fas fa-info"></i>INFO + STATISTICS</header>
-        <div id="regions_info">
+        <!-- font awesome icon statistics  -->
+        <header><i class="fas fa-chart-pie"></i>STATISTICS</header>
+        <div>
             <ul id="statistics">
                 <li><span>Number of Regions:</span>  <span id="num_regions">fetching ....</span></li>
                 <li><span>Number of Polygons:</span> <span id="num_polygons">fetching ....</span></li>
@@ -73,11 +73,14 @@
     </section>
 
     <section>
-        <!-- font awesome icon chart  -->
-        <header><i class="fas fa-chart-bar"></i>CHART</header>
-        <div id="regions_chart">
-            <!-- <canvas id="chart"></canvas> -->
-            <p>to be released in v2.1</p>
+        <!-- font awesome icon info  -->
+        <header><i class="fas fa-info"></i>INFO</header>
+        <div id="regions_info">
+            <p>
+                <b>Abstract:</b> Interim Biogeographic Regionalisation for Australia (IBRA) version 7.0 represents a landscape based approach to classifying the land surface of Australia. 89 biogeographic regions and 419 sub regions have been delineated, each reflecting a unifying set of major environmental influences which shape the occurrence of flora and fauna and their interaction with the physical environment across Australia and its external territories (excluding Antarctica). IBRA Version 7.0 data consists of two datasets. IBRA bioregions, which is a larger scale regional classification of homogenous ecosystems, and sub regions, which are more localised. IBRA Version 7.0 is the result of both significant changes to certain IBRA 6.1 boundaries, plus refinement of other boundaries due to better data availability amongst some states and territories, and alterations by the states/territories along state borders. The updated boundaries were jointly defined by the Commonwealth, State and Territory nature and conservation agencies. In this respect refinements were carried out to all mainland jurisdictions with significant changes in Queensland and South Australia. In addition, the dataset was also updated to more closely conform to the Geoscience Australia 1:100K State borders, and a standard coding/naming convention introduced (for both regions and sub-regions) resulting in differences to both names and codes used in earlier IBRA Versions.Various sources were used to delineate islands - these included the GA100K Admin layer plus the Australian Maritime Boundaries dataset, a Coral Sea dataset (held in ERIN) and the GA Commonwealth Fisheries 2006 dataset. Purpose: Interim Biogeographic Regionalisation for Australia (IBRA) version 7.0 represents a landscape based approach to classifying the land surface of Australia. 89 biogeographic regions and 419 sub regions have been delineated, each reflecting a unifying set of major environmental influences which shape the occurrence of flora and fauna and their interaction with the physical environment across Australia and its external territories (excluding Antarctica).
+                <a target="_new" href="https://fed.dcceew.gov.au/datasets/9c496279b5f949e39e603e253de7375f/about">[source]</a>
+            </p>
+            
         </div>
     </section>
 

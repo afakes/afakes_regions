@@ -7,7 +7,7 @@ bucket="s3://adamfakes.com"
 path="au_regions"
 
 # copy files to s3
-aws s3 sync . $bucket/$path --recursive --acl public-read
+aws s3 sync . $bucket/$path --acl public-read
 
 echo "Invalidating cloudfront cache"
 aws cloudfront create-invalidation --distribution-id E3KQYE7K1YTIPL --paths "/$path/*"

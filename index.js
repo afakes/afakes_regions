@@ -39,6 +39,14 @@ async function geojsonLayer(path) {
     return geojson;
 }
 
+function search_from_input(src) {
+    
+    if (src === null) { return; }
+    if (src.value === "") { search_reset(); return; }
+
+    search();
+
+}
 
 function search() {
 

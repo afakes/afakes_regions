@@ -59,12 +59,29 @@ nav button a  {
     text-transform: uppercase;
 }
 
+/* shadow on hover  */
+nav button:hover {
+    /* border shadow */
+    box-shadow: 0 0 5px #4a44ea;
+}
+
+
 nav input {
     padding: 0.5em;
     border: 1px solid #4a44ea;
     border-radius: 5px;
     margin-right: 0.5em;
     font-size: 105%;
+}
+
+/* shadow input on hover */
+nav input:hover {
+    box-shadow: 0 0 5px #4a44ea;
+}
+
+/* shadow input on focus */
+nav input:focus {
+    box-shadow: 0 0 5px #4a44ea;
 }
 
 
@@ -202,3 +219,14 @@ nav input {
     text-align: right;
 }
 
+
+#regions_info > p {
+    display: block;
+    padding: 1em;
+    line-height: 1.3em;
+    
+    /* justify text left and right */
+    text-align: justify;
+
+    
+}
